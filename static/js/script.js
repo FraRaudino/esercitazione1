@@ -1,6 +1,10 @@
 
     let NomeUtente=prompt("Inserisci il tuo nome: ")
 
+    while(NomeUtente===null){
+        NomeUtente=prompt("Inserisci il tuo nome: ")
+    }
+
     alert("Benvenuto " + NomeUtente)
     alert("Sei pronto per fare un quiz di cultura generale? ")
 
@@ -8,7 +12,7 @@
 
     let domanda1=prompt("Qual è il paese più piccolo del mondo")
     domanda1=domanda1.trim()
-    domanda1=domanda1.toLocaleLowerCase()
+    domanda1=domanda1.toLowerCase()
 
     if(domanda1 != 'vaticano'){
         alert("La risposta è sbagliata! Quella corretta è il vaticano")
@@ -20,9 +24,9 @@
 
     let domanda2=prompt("Qual è il fiume più lungo del mondo?")
     domanda2=domanda2.trim()
-    domanda2=domanda2.toLocaleLowerCase()
+    domanda2=domanda2.toLowerCase()
 
-    if(domanda2 != 'Nilo'){
+    if(domanda2 != 'nilo'){
         alert("La risposta è sbagliata! Quella corretta è il Nilo")
     }else
     {
@@ -32,7 +36,7 @@
 
     let domanda3=prompt("Quando è avvenuta la scoperta dell'America?")
     domanda3=domanda3.trim()
-    domanda3=domanda3.toLocaleLowerCase()
+    domanda3=domanda3.toLowerCase()
 
     if(domanda3 != '1492'){
         alert("La risposta è sbagliata! Quella corretta è il 1492")
@@ -44,10 +48,10 @@
 
     let domanda4=prompt("Chi ha scritto La Divina Commedia?")
     domanda4=domanda4.trim()
-    domanda4=domanda4.toLocaleLowerCase()
+    domanda4=domanda4.toLowerCase()
 
-    if(domanda4 != 'Dante Alighieri'){
-        alert("La risposta è sbagliata! Quella corretta è la Divina Commedia")
+    if(domanda4 != 'dante alighieri'){
+        alert("La risposta è sbagliata! Quella corretta è Dante Alighieri")
     }else
     {
         alert("La risposta è corretta")
@@ -56,9 +60,9 @@
 
     let domanda5=prompt("Qual è la capitale del Giappone?")
     domanda5=domanda5.trim()
-    domanda5=domanda5.toLocaleLowerCase()
+    domanda5=domanda5.toLowerCase()
 
-    if(domanda1 != 'Tokyo'){
+    if(domanda5 != 'tokyo'){
         alert("La risposta è sbagliata! Quella corretta è Tokyo")
     }else
     {
@@ -68,9 +72,9 @@
 
     let domanda6=prompt("In che anno è avvenuta la caduta del Muro di Berlino?")
     domanda6=domanda6.trim()
-    domanda6=domanda6.toLocaleLowerCase()
+    domanda6=domanda6.toLowerCase()
 
-    if(domanda1 != '1989'){
+    if(domanda6 != '1989'){
         alert("La risposta è sbagliata! Quella corretta è il 1989")
     }else
     {
@@ -80,9 +84,9 @@
 
     let domanda7=prompt("Qual è l'elemento chimico con simbolo O")
     domanda7=domanda7.trim()
-    domanda7=domanda7.toLocaleLowerCase()
+    domanda7=domanda7.toLowerCase()
 
-    if(domanda1 != 'Ossigeno'){
+    if(domanda7 != 'ossigeno'){
         alert("La risposta è sbagliata! Quella corretta è il Ossigeno")
     }else
     {
@@ -90,6 +94,8 @@
         cont++
     }
 
+    let percentuale=(cont*100)/7
+    console.log("La percentuale di risposte esatte è:"+ percentuale + "%")
     
 
 
